@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+/* overall document styling */
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #22262A ;
+  } 
+
+
+/* navbar styling */
+.navbar-brand span{
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+/* hero section styling */
+
+.hero-container  {
+    position: relative;
+}
+
+.hero-overlay{
+    position: absolute;
+    bottom: 4rem;
+    right: 2rem;
+}
+
+.standout-font {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.btn-styling {
+    color: #ffffff;
+    background-color: #22262A;
+    border-radius: 0;
+}
+
+/* layout styles */
+
+.max-width {
+    width: 100%;
+}
+
+.no-flex-wrap {
+    flex-wrap: nowrap;
+}
+
+/* visualizing gird components styles (dev only) */
+.my-container {
+border: 3.5px solid green;
+}
+
+.my-row {
+border: 3px solid red;
+/* height: 300px; */
+}
+
+.my-col {
+border: 3px dotted blue;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) and (min-width: 992px){
+    
+}
+@media screen and (max-width: 991px) and (min-width: 768px){
+    /* .standout-font {
+        font-weight: 700;
+        font-size: 3rem;
+    } */
+}
+@media screen and (max-width: 767px) and (min-width: 576px){
+    .hero-overlay{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 575px){
+    
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
