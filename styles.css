@@ -9,6 +9,10 @@ html, body{
     color: #22262A ;
   } 
 
+  .btn {
+    border-radius: 0%;
+    background-color: #fff;
+  }
 
 /* navbar styling */
 .navbar-brand span{
@@ -36,17 +40,38 @@ html, body{
 .btn-styling {
     color: #ffffff;
     background-color: #22262A;
-    border-radius: 0;
 }
+
+
+/* Category section */
+
+.category-container{
+    position: relative;
+}
+
+.category-overlay {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
 
 /* layout styles */
 
-.max-width {
+.width-hundred {
     width: 100%;
+}
+
+.max-width {
+    max-width: 100%;
 }
 
 .no-flex-wrap {
     flex-wrap: nowrap;
+}
+
+.no-padding{
+    padding: 0%;
 }
 
 /* visualizing gird components styles (dev only) */
@@ -80,7 +105,9 @@ border: 3px dotted blue;
     
 }
 @media screen and (max-width: 575px){
-    
+    .hero-overlay{
+        display: none;
+    }
 }
 
 /*
