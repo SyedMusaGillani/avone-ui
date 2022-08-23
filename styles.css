@@ -61,6 +61,11 @@ html, body{
     left: 2rem;
 }
 
+.img-stretch {
+    height: 100%;
+    object-fit: cover;
+}
+
 /* Women's & Men's Section */
 
 .section-title {
