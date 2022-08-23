@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
 
 /* overall document styling */
 
@@ -114,14 +114,39 @@ button and heading styling same as hero section
     background-color: #F2F8FC;
 }
 
+.heading{
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+}
+
+.details p {
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.mail-address{
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
 .input-field {
     background-color: white;
     border-radius: .25rem;
 }
 
-/* .input-field span.button {
-    color: black;
-} */
+.input-field .email {
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.input-field .button {
+    font-weight: 600;    
+}
+
+.inner-heading{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
 
 .copyright-container {
     background-color: #E7F5F8;
