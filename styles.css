@@ -86,17 +86,6 @@ html, body{
     color: #CF2929;
 }
 
-/* footer section */
-
-footer {
-    background-color: #E7F5F8;
-}
-
-footer p{
-    font-weight: 400;
-    font-size: .7rem;
-    letter-spacing: .1rem;
-}
 
 /* Tachen Section */
 
@@ -117,6 +106,31 @@ button and heading styling same as hero section
     position: absolute;
     bottom: 2.5rem;
     left: 5rem;
+}
+
+/* footer section */
+
+.contact-container {
+    background-color: #F2F8FC;
+}
+
+.input-field {
+    background-color: white;
+    border-radius: .25rem;
+}
+
+/* .input-field span.button {
+    color: black;
+} */
+
+.copyright-container {
+    background-color: #E7F5F8;
+}
+
+.copyright{
+    font-weight: 400;
+    font-size: .7rem;
+    letter-spacing: .1rem;
 }
 
 /* layout styles */
@@ -185,7 +199,7 @@ border: 3px dotted blue;
     .hero-overlay{
         display: none;
     }
-    footer p{
+    .copyright{
         font-size: .5rem;
         text-align: center;
     }
