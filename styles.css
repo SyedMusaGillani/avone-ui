@@ -2,22 +2,27 @@
 
 /* overall document styling */
 
-html, body{
+html, body {
     height: 100%;
     width: 100%;
     font-family: 'Poppins', sans-serif;
     color: #22262A ;
-  } 
+} 
 
-  .btn {
+.btn {
     border-radius: 0%;
     background-color: #fff;
-  }
+}
 
 /* navbar styling */
+
 .navbar-brand span{
     font-weight: 700;
     font-size: 1.75rem;
+}
+
+.icons-display p {
+    display: inline;
 }
 
 /* hero section styling */
@@ -221,6 +226,9 @@ border: 3px dotted blue;
 
 /* Media Queries */
 @media screen and (max-width: 1440px) and (min-width: 993px){
+    .icons-display p{
+        display: none;
+    }
     
 }
 @media screen and (max-width: 992px) and (min-width: 769px){
@@ -228,11 +236,19 @@ border: 3px dotted blue;
         font-weight: 700;
         font-size: 3rem;
     } */
+    .icons-display p{
+        display: none;
+    }
+    
 }
 @media screen and (max-width: 768px) and (min-width: 577px){
     /* .hero-overlay{
         display: none;
     } */
+    .icons-display p{
+        display: none;
+    }
+
     .standout-font {
         font-size: 2rem;
     }
