@@ -98,6 +98,27 @@ footer p{
     letter-spacing: .1rem;
 }
 
+/* Tachen Section */
+
+.tachen-container {
+    /* background-image: url('./img/17\ 1.png');
+    min-height: 40vh;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat; */
+    position: relative;
+}
+
+/* 
+button and heading styling same as hero section
+*/
+
+.tachen-overlay {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 5rem;
+}
+
 /* layout styles */
 
 .width-hundred {
@@ -131,22 +152,36 @@ border: 3px dotted blue;
 }
 
 /* Media Queries */
-@media screen and (max-width: 1200px) and (min-width: 992px){
+@media screen and (max-width: 1440px) and (min-width: 993px){
     
 }
-@media screen and (max-width: 991px) and (min-width: 768px){
+@media screen and (max-width: 992px) and (min-width: 769px){
     /* .standout-font {
         font-weight: 700;
         font-size: 3rem;
     } */
 }
-@media screen and (max-width: 767px) and (min-width: 576px){
-    .hero-overlay{
+@media screen and (max-width: 768px) and (min-width: 577px){
+    /* .hero-overlay{
         display: none;
+    } */
+    .standout-font {
+        font-size: 2rem;
     }
-    
+
+    .hero-overlay {
+        position: absolute;
+        bottom: 2rem;
+        right: 1rem;
+    }
+
+    .tachen-overlay {
+        position: absolute;
+        bottom: 1.25rem;
+        right: 2.5rem;
+    }
 }
-@media screen and (max-width: 575px){
+@media screen and (max-width: 576px){
     .hero-overlay{
         display: none;
     }
