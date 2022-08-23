@@ -48,6 +48,12 @@ html, body{
 .category-container{
     position: relative;
 }
+/* 
+.overlay-container{
+    position: relative;
+    background-image: url('./img/5.png');
+    background-repeat: no-repeat;
+} */
 
 .category-overlay {
     position: absolute;
@@ -55,6 +61,30 @@ html, body{
     left: 2rem;
 }
 
+/* Women's & Men's Section */
+
+.section-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.card-desc {
+    font-size: .9rem;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: .1rem;
+}
+
+.orig-price {
+    display: inline !important; 
+    text-decoration: line-through;
+    /* padding-right: 4rem; */
+}
+
+.disc-price {
+    display: inline !important;
+    color: #CF2929;
+}
 
 /* layout styles */
 
