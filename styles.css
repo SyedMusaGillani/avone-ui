@@ -86,6 +86,30 @@ html, body{
     color: #CF2929;
 }
 
+/* Avone Styles Section */
+
+/* title same as mens and womens section */
+
+.image-overlay-container {
+    position: relative;
+}
+
+.image-overlay {
+    position: absolute;
+    border: .5rem solid white;
+    bottom: 1%;
+    right: 1%;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 1%;
+    left: 10%;
+    font-size: .9rem;
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: .75rem;
+}
 
 /* Tachen Section */
 
@@ -222,6 +246,10 @@ border: 3px dotted blue;
 }
 @media screen and (max-width: 576px){
     .hero-overlay{
+        display: none;
+    }
+
+    .tachen-overlay {
         display: none;
     }
     .copyright{
