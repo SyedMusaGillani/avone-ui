@@ -1,23 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
 
 /* overall document styling */
 
-html, body{
+html, body {
     height: 100%;
     width: 100%;
     font-family: 'Poppins', sans-serif;
     color: #22262A ;
-  } 
+} 
 
-  .btn {
+.btn {
     border-radius: 0%;
     background-color: #fff;
-  }
+}
 
 /* navbar styling */
+
 .navbar-brand span{
     font-weight: 700;
     font-size: 1.75rem;
+}
+
+.icons-display p {
+    display: inline;
 }
 
 /* hero section styling */
@@ -48,6 +53,12 @@ html, body{
 .category-container{
     position: relative;
 }
+/* 
+.overlay-container{
+    position: relative;
+    background-image: url('./img/5.png');
+    background-repeat: no-repeat;
+} */
 
 .category-overlay {
     position: absolute;
@@ -55,6 +66,132 @@ html, body{
     left: 2rem;
 }
 
+.img-stretch {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Women's & Men's Section */
+
+.section-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.card-desc {
+    font-size: .9rem;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: .1rem;
+}
+
+.orig-price {
+    display: inline !important; 
+    text-decoration: line-through;
+    /* padding-right: 4rem; */
+}
+
+.disc-price {
+    display: inline !important;
+    color: #CF2929;
+}
+
+/* Avone Styles Section */
+
+/* title same as mens and womens section */
+
+.image-overlay-container {
+    position: relative;
+}
+
+.image-overlay {
+    position: absolute;
+    border: .5rem solid white;
+    bottom: 1%;
+    right: 1%;
+    width: 50%;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 1%;
+    left: 10%;
+    font-size: 1.25vw;
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: .75rem;
+}
+
+/* Tachen Section */
+
+.tachen-container {
+    /* background-image: url('./img/17\ 1.png');
+    min-height: 40vh;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat; */
+    position: relative;
+}
+
+/* 
+button and heading styling same as hero section
+*/
+
+.tachen-overlay {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 5rem;
+}
+
+/* footer section */
+
+.contact-container {
+    background-color: #F2F8FC;
+}
+
+.heading{
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+}
+
+.details p {
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.mail-address{
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.input-field {
+    background-color: white;
+    border-radius: .25rem;
+}
+
+.input-field .email {
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.input-field .button {
+    font-weight: 600;    
+}
+
+.inner-heading{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.copyright-container {
+    background-color: #E7F5F8;
+}
+
+.copyright{
+    font-weight: 400;
+    font-size: .7rem;
+    letter-spacing: .1rem;
+}
 
 /* layout styles */
 
@@ -89,24 +226,98 @@ border: 3px dotted blue;
 }
 
 /* Media Queries */
-@media screen and (max-width: 1200px) and (min-width: 992px){
-    
-}
-@media screen and (max-width: 991px) and (min-width: 768px){
-    /* .standout-font {
-        font-weight: 700;
-        font-size: 3rem;
-    } */
-}
-@media screen and (max-width: 767px) and (min-width: 576px){
-    .hero-overlay{
+@media screen and (max-width: 1440px) and (min-width: 993px){
+    .icons-display p{
         display: none;
     }
     
 }
-@media screen and (max-width: 575px){
+@media screen and (max-width: 992px) and (min-width: 769px){
+    /* .standout-font {
+        font-weight: 700;
+        font-size: 3rem;
+    } */
+    .icons-display p{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 768px) and (min-width: 577px){
+    /* .hero-overlay{
+        display: none;
+    } */
+    .icons-display p{
+        display: none;
+    }
+
+    .standout-font {
+        font-size: 2rem;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        bottom: 2rem;
+        right: 1rem;
+    }
+
+    .image-overlay {
+        position: absolute;
+        border: .5rem solid white;
+        bottom: 1%;
+        right: 1%;
+        width: 50%;
+    }
+    
+    .text-overlay {
+        position: absolute;
+        bottom: 1%;
+        left: 10%;
+        font-size: 1.25vw;
+        font-weight: 400;
+        text-decoration: underline;
+        text-underline-offset: .75rem;
+    }
+
+    .tachen-overlay {
+        position: absolute;
+        bottom: 1.25rem;
+        right: 2.5rem;
+    }
+}
+@media screen and (max-width: 576px){
+
+    .no-padding-xs {
+        padding: 0%;
+    }
+
     .hero-overlay{
         display: none;
+    }
+
+    .image-overlay {
+        position: absolute;
+        border: .5rem solid white;
+        bottom: 1%;
+        right: 1%;
+        width: 50%;
+    }
+    
+    .text-overlay {
+        position: absolute;
+        bottom: 1%;
+        left: 10%;
+        font-size: 1.25vw;
+        font-weight: 400;
+        text-decoration: underline;
+        text-underline-offset: .75rem;
+    }
+
+    .tachen-overlay {
+        display: none;
+    }
+    .copyright{
+        font-size: .5rem;
+        text-align: center;
     }
 }
 
