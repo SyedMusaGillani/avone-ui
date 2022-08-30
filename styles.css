@@ -109,13 +109,14 @@ html, body {
     border: .5rem solid white;
     bottom: 1%;
     right: 1%;
+    width: 50%;
 }
 
 .text-overlay {
     position: absolute;
     bottom: 1%;
     left: 10%;
-    font-size: .9rem;
+    font-size: 1.25vw;
     font-weight: 400;
     text-decoration: underline;
     text-underline-offset: .75rem;
